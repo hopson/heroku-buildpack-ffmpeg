@@ -22,4 +22,4 @@ mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$PATH:$HOME/vendor/ffmpeg/bin"' >> $PROFILE_PATH
 #echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/vendor/ffmpeg/lib"' >> $PROFILE_PATH
 echo "$HOME/vendor/ffmpeg/lib" > /etc/ld.so.conf.d/ffmpeg.conf
-ldconfig
+/sbin/ldconfig
